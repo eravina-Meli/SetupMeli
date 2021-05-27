@@ -11,7 +11,7 @@ public class RadixSortEjerc
 		HashMap<Character, ArrayList<String>> mapa = new HashMap<>();
 
 		//Llenar mapa con listas
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			mapa.put(Integer.toString(i).charAt(0) ,new ArrayList<String>());
 		}
 

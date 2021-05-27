@@ -22,7 +22,7 @@ public class StringUtil
 		String cadena = "";
 		int cantidadC = Character.getNumericValue(c);
 		int cant = n-cantidadC;
-		for (int i = 1; i < cant; i++){
+		for (int i = 1; i <= cant; i++){
 			cadena += c;
 		}
 		cadena +=s;
@@ -84,7 +84,7 @@ public class StringUtil
 				max = arr[i].length();
 				longitudTotal = longitud - max;
 				if(longitud > max)
-					arr[i] = lpad((arr[i].toString()), longitudTotal+1, c);
+					arr[i] = lpad((arr[i].toString()), longitudTotal, c);
 			}
 	}
 	}
